@@ -12,6 +12,8 @@ Require it as such: `local arson = require("arson")`
 
 or if it is nested in a directory: `local arson = require("folder.folder.arson")`
 
+You can check the [main.lua](https://github.com/flamendless/arson.lua/blob/master/main.lua) as an example. It has descriptive comments.
+
 ## Custom Data/Class Prerequisite
 
 Your class or object must have the public field `type`. This will be used by Arson to determine whether a table stored in the data is to be encoded/decoded
@@ -23,8 +25,6 @@ local my_custom_class = {
 	type = "my_custom_class" --IMPORTANT
 }
 ```
-
-You can check the [main.lua](https://github.com/flamendless/arson.lua/blob/master/main.lua) as an example. It has descriptive comments.
 
 ## API
 

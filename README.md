@@ -43,6 +43,7 @@ arson.register("custom_vec2_class",
 		return my_custom_vec2_class:new(data.x, data.y)
 	end)
 ```
+---
 
 * Arson.unregister - unregister an already added custom data/class
 
@@ -54,6 +55,7 @@ Example:
 arson.unregister("custom_class") --will error
 arson.unregister("custom_vec2_class")
 ```
+---
 
 * Arson.encode - encode a table
 
@@ -81,6 +83,7 @@ bar = { x = 1, y = 1, type = "custom_vec2_class" }
 --the custom_data table can now be used with json.lua
 local str_json = json.encode(custom_data)
 ```
+---
 
 * Arson.decode - decode a table. It will modify the table passed as it will replace custom data with the decoded one
 
@@ -95,6 +98,7 @@ local json_decoded = json.decode(str_json)
 --then finally decode custom data/class
 arson.decode(json_decoded)
 ```
+---
 
 ## LICENSE
 

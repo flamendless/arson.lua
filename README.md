@@ -2,9 +2,6 @@
 
 A library-companion to register custom data types that can be encoded and decoded for [json.lua](https://github.com/rxi/json.lua).
 
-## Why Arson?
-
-It is from `RSON`, which is derived from `Register-JSON`. I know it does not make any sense. But is sounds cool.
 
 ## How to use:
 
@@ -28,7 +25,7 @@ local my_custom_class = {
 
 ## API
 
-* Arson.register - register your own custom data/class that can be encoded and decoded
+* **Arson.register** - register your own custom data/class that can be encoded and decoded
 
 Example:
 ```lua
@@ -45,7 +42,7 @@ arson.register("custom_vec2_class",
 ```
 ---
 
-* Arson.unregister - unregister an already added custom data/class
+* **Arson.unregister** - unregister an already added custom data/class
 
 Example:
 ```lua
@@ -57,7 +54,7 @@ arson.unregister("custom_vec2_class")
 ```
 ---
 
-* Arson.encode - encode a table
+* **Arson.encode** - encode a table
 
 Example:
 ```lua
@@ -85,7 +82,7 @@ local str_json = json.encode(custom_data)
 ```
 ---
 
-* Arson.decode - decode a table. It will modify the table passed as it will replace custom data with the decoded one
+* **Arson.decode** - decode a table. It will modify the table passed as it will replace custom data with the decoded one
 
 Example:
 ```lua
@@ -99,6 +96,10 @@ local json_decoded = json.decode(str_json)
 arson.decode(json_decoded)
 ```
 ---
+
+## Why Arson?
+
+It is from `RSON`, which is derived from `Register-JSON`. I know it does not make any sense. But is sounds cool.
 
 ## LICENSE
 

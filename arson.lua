@@ -24,7 +24,7 @@ end
 
 function Arson.register(type_name, on_encode, on_decode)
 	assert(type(type_name) == "string", "Passed argument 'type_name' must be of type 'string'")
-	assert(custom_types[type_name], "Passed 'type_name' was already registered")
+	assert(custom_types[type_name] == nil, "Passed 'type_name' was already registered")
 	assert(type(on_encode) == "function", "Passed argument 'on_encode' must be of type 'function'")
 	assert(type(on_decode) == "function", "Passed argument 'on_decode' must be of type 'function'")
 	custom_types[type_name] = {
